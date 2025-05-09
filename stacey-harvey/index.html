@@ -6,7 +6,24 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>Stacey Harvey</title>
 
-    <style>  /* Inside this block, comments look like this. */
+    <style> 
+     @media (max-width: 1200px){
+          .card {
+          max-width: 1200px;
+          /* margin: 0 auto; */
+          display: grid;
+          /* gap: 1rem; */
+        }
+
+        body {
+        font-size: 20px !important;
+        }
+
+
+    }
+      
+    
+    /* Inside this block, comments look like this. */
       #card-catalog {  /* We used an id here, but if you plan to have multiple catalogs on the same page, you could turn this into a class. */
         display: flex;
         flex-direction: row;  /* This is the default. Other options: column, and row-reverse and column-reverse. */
@@ -90,20 +107,7 @@
          text-align:center; 
       }
 
-      @media (max-width: 800px){
-          .card {
-          max-width: 1200px;
-          /* margin: 0 auto; */
-          display: grid;
-          gap: 1rem;
-        }
-
-        body {
-        font-size: 100px;
-        }
-
-
-      }
+      
       [data-theme="dark"] {
     
         body {
@@ -168,7 +172,6 @@
 
       }
 
-      
 
 
     </style>
