@@ -4,7 +4,7 @@
 <script type="text/javascript" src="./settings.js" defer></script>
 
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>Stacey Harvey</title>
+    <title>Max Evans</title>
 
     <style>  /* Inside this block, comments look like this. */
       #card-catalog {  /* We used an id here, but if you plan to have multiple catalogs on the same page, you could turn this into a class. */
@@ -35,6 +35,7 @@
       .card > h3 {
         grid-row: 2;
         margin: 1em;
+        text-decoration-line: underline;
       }
 
 
@@ -90,14 +91,11 @@
          text-align:center; 
       }
 
-      @media (max-width: 400px){
-          .card {
-          max-width: 1200px;
-          /* margin: 0 auto; */
-          display: grid;
-          gap: 1rem;
-        }
+      a {
+        text-decoration: none;
       }
+
+
       [data-theme="dark"] {
     
         body {
@@ -162,13 +160,23 @@
 
       }
 
-      
+
+      @media (max-width: 400px)
+      {
+        .card {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+
+      }
 
 
     </style>
   </head>
   <body class="darkTheme">
-    <h1>Stacey Harvey</h1>
+    <h1>Max Evans</h1>
     
     </ul> 
     </p>
@@ -181,15 +189,31 @@
         See: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section
       -->
 
-      <a href="https://www.linkedin.com/in/staceykharvey/" class="card">
+      <a href="https://orionstudio7.github.io/BoycottSearch" class="card">
+        <h3>Boycott Search</h3>
+        <p style="text-decoration:none">AngularJS</p>
+      </a>
+      <a href="https://orionstudio7.github.io/ToDoApp/" class="card">
+        <h3>Nancy Drew Inspired Tasklist</h3>
+        <p>AngularJS</p>
+      </a>
+      <a href="https://orionstudio.itch.io/you-herd-it-here-demo" class="card">
+        <h3>You Herd It Here</h3>
+        <p>Godot</p>
+      </a>
+      <a href="https://orionstudio.itch.io/" class="card">
+        <h3>itch.io</h3>
+      </a>
+
+      <a href="https://github.com/orionstudio7" class="card">
+        <h3>Github</h3>
+      </a>
+
+      <a href="https://www.linkedin.com/in/mevans7/" class="card">
         <h3>Linkedin</h3>
       </a>
-      <a href="https://bsky.app/profile/theblitchwitch.bsky.social" class="card">
-        <h3>Personal Bluesky</h3>
-      </a>
-      <a href="https://bsky.app/profile/entrylvldev.bsky.social" class="card">
-        <h3>Entry LVL Bluesky</h3>
-      </a>
+      
+
 
       
     </section>
