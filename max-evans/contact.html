@@ -1,0 +1,100 @@
+<!-- 9hhmq4j -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script type="text/javascript" src="./settings.js" defer></script>
+<script>
+  function validateAndSend() {
+    
+    var email = document.getElementById('email').value;
+
+    console.log(email)
+
+//    Could have an email of a@a.com - so 7 characters minimum
+    if(email.indexOf("@") == -1 || email.length < 7)  
+    {
+        alert("Please Enter a Valid Email")
+    }
+    
+    else
+    {
+        
+        return true;
+    }
+
+}
+</script>
+
+<meta name="viewport" content="width=device-width">
+
+    <title>About - Atelier Cassette</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+  
+  <body class="darkTheme">
+    <header>   
+         <h1>Atelier Cassette</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="./">About</a></li>
+            <li><a href="./">Project 1</a></li>
+            <li><a href="./">Project 2 </a></li>
+            <li><a href="./">Contact</a></li>
+        </ul>
+    </nav>
+    
+    </ul> 
+    </p>
+
+        <section id="banner">
+      <!--
+        A section is a semantic block level element.
+        It functions like a div but makes it clear that the contained HTML is a standalone element.
+        See: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section
+      -->
+
+        <ul>
+            <li><a href="./">Bluesky</a></li>
+            <li><a href="./">Itch.io</a></li>
+        </ul>
+      
+    </section>
+    
+    <section id="main">
+      <!--
+        A section is a semantic block level element.
+        It functions like a div but makes it clear that the contained HTML is a standalone element.
+        See: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section
+      -->
+
+        <section id="contactSection">
+            <h1>Contact Us</h1>
+
+            <form name="contactForm" id="contactForm" action="https://formsubmit.co/mevans7.mit@gmail.com" method="post" onsubmit="return validateAndSend();" >
+                <label for="firstName" >First Name:</label>
+                <input type="text" id="firstName" name="firstName" required="" minlength="2" pattern="[a-zA-Z]+" ><br >
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required="" minlength="2" pattern="[a-zA-Z]+" ><br >
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email"> <br >
+                    
+                <label for="message">Message: </label>
+                    <textarea id="message" name="message" ></textarea> <br >
+                <input type="submit" name="submit" value="Submit">
+            </form>
+        </section>
+    </section>
+
+
+    <footer>
+        <p>Copyright</p>
+    </footer>
+    
+  
+</body></html>
