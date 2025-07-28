@@ -1,0 +1,90 @@
+ body {
+
+            display: grid;
+
+            grid-template:
+                "n n " 10%
+                "a a "
+                "b c ";
+            place-content: start center;
+            /*
+          The fr unit is a "fractional unit" and is a content aware unit.
+          It'll always be at least minimum width of the column, but up to its ratio of units.
+          You can mix different units on the same line and fractional units use "the remainder" of the more
+          reified units like % or px.
+      */
+            gap: .5em;
+            /* Gap is the "gutters" between the cells. An alternative to this is two values for between rows and between columns.*/
+            box-sizing: border-box;
+        }
+
+        section {
+            margin:0;
+        }
+        p{
+            margin:10px;
+        }
+
+        .left-container {
+            /* flex:50%; */
+            /* this is how you assign an element to one of the labeled40px areas in the template strings. */
+            grid-area: b;
+            justify-self: end;
+            align-self: start;
+            display:grid;
+            grid-template:
+                "d d" 
+                "e f";     
+            gap: .5em;  
+            margin:10px;
+     
+
+        }
+
+        .right-container {
+            grid-area: c;
+            /* padding-right: 10px; */
+            width:40vw;
+            padding:10px;
+        }
+
+        .main-header {
+            grid-area: a;
+        }
+
+        .nav-header {
+            grid-area: n;
+            align-self:start;
+        }
+
+        img
+        {
+            grid-area: e;
+            min-width: 100px;
+            padding-top: 5px;
+            max-width:100%;
+            justify-self:end;
+        }
+
+        nav ul img {
+            min-width :1em;
+            width: 1em;
+            padding: 0;
+        }
+        video {
+            grid-area: d;
+            min-width: 100px;
+            padding-top: 5px;
+            max-width:100%;
+            justify-self:end;
+
+        }
+        h2{
+            margin:0px;
+        }
+
+
+        /* p
+    {
+        max-width: 80%
+    } */

@@ -1,0 +1,101 @@
+h1{
+    font-size: 100px;
+    text-align:center;
+    border-color: black 4px;
+    border-style: solid;
+    border-radius: 3vw;
+    padding-left: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-width: 10px;
+    margin: 0;
+}
+
+h2{
+    font-size: 40px;
+    text-align:center;
+    border-color: black;
+    border-style: solid;
+    border-radius: 2vw;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-width: 10px;
+    margin: 10;
+}
+
+embed{
+    margin-right: 20px;
+}
+
+section{
+    margin: 10vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.summary{
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    /* background-color: #B67A8D; */
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+nav li{
+    text-align: center;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+    border-width: 5px;
+    margin: 5px;
+}
+
+nav .devName {
+    /* font-weight: bold; */
+    text-align: center;
+    align-content: center;
+    }
+nav a
+{
+    color: black;
+}
+
+/* two lined focus indicator provides accessibility no matter what browser settings users have z*/
+*:focus {
+	outline: 4px #ffffff solid;
+	outline-offset: 0;
+	box-shadow: 0 0 0 8px #000000;
+} 
+
+embed{
+    width: 1000px;
+
+    height: 500px;
+}
+
+
+@media (max-width: 800px) {
+
+    h1
+    {
+        font-size: 50px;
+    }
+    h2{
+        font-size:20px;
+    }
+    section{
+        margin: 20px;
+    }
+
+    embed{
+        width: 300px;
+        height: 300px;
+    }
+
+}
