@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script type="text/javascript" src="./settings.js" defer></script>
+<script src="./settings.js" defer></script>
 
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width">
@@ -124,10 +124,6 @@
         a {
           color: white;
         }
-/* 
-        a:visited {
-          color: mediumpurple;
-        } */
 
         .card {
           border-color: #949393;
@@ -141,14 +137,14 @@
         outline: 5px #ffffff solid;
         outline-offset: 0;
         box-shadow: 0 0 0 4px #000000;  
-    } 
+        } 
       }
 
       [data-theme="light"]  {
       /*
         This demo is not about this, but this is how to modify your design for light mode or in this case, dark mode.
        */
-        html {
+        body {
           color: black;
           background-color: white;
         }
@@ -173,10 +169,8 @@
         outline: 5px #ffffff solid;
         outline-offset: 0;
         box-shadow: 0 0 0 10px #000000;  
-    } 
-
-
-      }
+        }
+    }
 
 
     
@@ -189,8 +183,7 @@
   <body class="darkTheme">
     <h1>Max Evans</h1>
     
-    </ul> 
-    </p>
+
     <p class="tagline">I focus on simple, effective user experiences with an eye on accessibility. </p>
 
     <section id="card-catalog">
@@ -235,7 +228,8 @@
 
     <h2>Settings</h2>
     <section>
-      <label id="color">Color
+      <label id="color">Color </label>
+
       <form id = "main" class = "card">
           <label>
           <input id="light" type="radio" name = "theme" value = "light" onclick="setTheme('light')">
@@ -244,7 +238,6 @@
           <input id="dark" type="radio" name = "theme" value = "dark" onclick="setTheme('dark')">
           Dark</label>
       </form>
-    </label>
     </section>  
     
   
