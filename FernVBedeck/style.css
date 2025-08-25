@@ -48,6 +48,7 @@
         background-repeat:no-repeat;
         background-size: cover;
         align-items: center;
+        background-position: center;
 
         height: 60vh; 
     }
