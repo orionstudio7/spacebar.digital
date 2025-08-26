@@ -24,6 +24,30 @@ h2{
     margin: 10;
 }
 
+label, input, textarea{
+    padding-left: .5em;
+    padding-right: .5em; 
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 15px;
+    font-size:20px;
+
+}
+
+.submit{
+    margin-bottom:.5em;
+    height: 5vh; 
+}
+
+textarea{
+    height:10vh;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+/* input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+} */
 embed{
     margin-right: 20px;
 }
