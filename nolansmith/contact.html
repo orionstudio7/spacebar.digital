@@ -1,0 +1,76 @@
+<!-- 9hhmq4j -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script type="text/javascript" src="./settings.js" defer></script>
+<link rel="stylesheet" type="text/css" href="/main.css">
+
+<script>
+  function validateAndSend() {
+    
+    var email = document.getElementById('email').value;
+
+    console.log(email)
+
+//    Could have an email of a@a.com - so 7 characters minimum
+    if(email.indexOf("@") == -1 || email.length < 7)  
+    {
+        alert("Please Enter a Valid Email")
+    }
+    
+    else
+    {
+        
+        return true;
+    }
+
+}
+</script>
+
+<meta name="viewport" content="width=device-width">
+
+    <title>Contact - Nolan Smith</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+  
+  <body class="darkTheme">
+         <h1>Nolan Smith</h1>
+
+
+    
+    <section id="main">
+      <!--
+        A section is a semantic block level element.
+        It functions like a div but makes it clear that the contained HTML is a standalone element.
+        See: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section
+      -->
+
+        <section >
+            <h2>Contact Me</h2>
+
+            <form class = "card" name="contactForm" id="contactForm" action="https://smartforms.dev/submit/68ae290ac184545ccc0c822f" method="post" onsubmit="return validateAndSend();" >
+                <label for="firstName" >First Name:</label>
+                <input type="text" id="firstName" name="firstName" required="" minlength="2" pattern="[a-zA-Z]+" ><br >
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required="" minlength="2" pattern="[a-zA-Z]+" ><br >
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email"> <br >
+                    
+                <label for="message">Message: </label>
+                    <textarea id="message" name="message" ></textarea> <br >
+                <input type="submit" name="submit" value="Submit" class="submit">
+            </form>
+        </section>
+    </section>
+
+
+    <footer>
+        <p>Copyright</p>
+    </footer>
+    
+  
+</body></html>
