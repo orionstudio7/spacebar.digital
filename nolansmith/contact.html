@@ -29,13 +29,16 @@
 
 <meta name="viewport" content="width=device-width">
 
-    <title>Contact - Nolan Smith</title>
+    <title>Contact - Max Evans</title>
+    <link rel="stylesheet" href="style.css">
 
 
 </head>
   
   <body class="darkTheme">
+    <header>   
          <h1>Nolan Smith</h1>
+    </header>
 
 
     
@@ -46,10 +49,8 @@
         See: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section
       -->
 
-        <section >
             <h2>Contact Me</h2>
-
-            <form class = "card" name="contactForm" id="contactForm" action="https://smartforms.dev/submit/68ae290ac184545ccc0c822f" method="post" onsubmit="return validateAndSend();" >
+            <form class="contactSection" name="contactForm" id="contactForm" action="https://smartforms.dev/submit/68ae290ac184545ccc0c822f" method="post" onsubmit="return validateAndSend();" >
                 <label for="firstName" >First Name:</label>
                 <input type="text" id="firstName" name="firstName" required="" minlength="2" pattern="[a-zA-Z]+" ><br >
 
@@ -63,7 +64,7 @@
                     <textarea id="message" name="message" ></textarea> <br >
                 <input type="submit" name="submit" value="Submit" class="submit">
             </form>
-        </section>
+    
     </section>
 
 

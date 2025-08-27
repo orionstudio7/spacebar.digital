@@ -24,30 +24,65 @@ h2{
     margin: 10;
 }
 
-label, input, textarea{
-    padding-left: .5em;
+/* label, input, textarea{ */
+
+    /* padding-left: .5em;
     padding-right: .5em; 
     margin-left: 1em;
-    margin-right: 1em;
-    border-radius: 15px;
+    margin-right: 1em; */
+    /* border-radius: 15px;
     font-size:20px;
+    box-sizing:content-box;
+    width: 80%; */
+
+/* } */
+
+label{
+    width:100%;
+    padding:.5em;
+    margin:.5em;
+    text-align:center;
+    font-weight: bold;
+    font-size: 20px;
 
 }
 
-.submit{
-    margin-bottom:.5em;
-    height: 5vh; 
-}
+ input{
+        width: 80%; 
+        padding: 10px;
+        /* width: 100%; */
+        margin: 10px;
+        box-sizing: border-box;
+        font-size: 20pt;
+        border-width: thick;
+        border-color: black;
+        border-style: solid;
+        border-radius: 15px;
+
+    }
 
 textarea{
-    height:10vh;
-    margin-top: 5px;
-    margin-bottom: 10px;
+        width: 80%; /* Full width */
+        padding: 10px;
+        margin: 10px;
+        box-sizing: border-box;
+        font-size: 20PX;
+        border-width: thick;
+        border-color: black;
+        border-style: solid;
+        border-radius:15px;
+        height:100%;
+        margin-top: 5px;
+        margin-bottom: 10px;
+
+    }
+
+.submit{
+    margin-bottom:em;
+    /* height: 100%;  */
 }
-/* input{
-    margin-top: 5px;
-    margin-bottom: 5px;
-} */
+
+
 embed{
     margin-right: 20px;
 }
@@ -116,7 +151,7 @@ embed{
         font-size: 50px;
     }
     h2{
-        font-size:20px;
+        font-size:30px;
     }
     section{
         margin: 20px;
@@ -132,16 +167,16 @@ embed{
 
 @media (max-width: 1200px){
     .card {
-    max-width: 1200px;
-    /* margin: 0 auto; */
-    display: grid;
-    gap: 1rem;
-}
+        max-width: 1200px;
+        /* margin: 0 auto; */
+        display: grid;
+        gap: 1rem;
+    }
 
-body {
-font-size: 500px;
-color: black;
-}
+    body {
+    font-size: 500px;
+    color: black;
+    }
 
 
 }
@@ -193,6 +228,20 @@ padding: 0 1em;
 
 p {
 line-height: 1.5em;
+}
+
+form.contactSection
+{
+
+    padding: 0;
+    margin:0;
+    width: 100%;
+
+    border: white solid 3px;
+    width: 100%;
+    border-radius: 15px;
+    display:grid;
+    justify-items:center;
 }
 
 
