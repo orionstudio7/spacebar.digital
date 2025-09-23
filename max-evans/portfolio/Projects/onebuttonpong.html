@@ -3,19 +3,19 @@
 
 <head>
     <script src="../settings.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../main.css">
     <title>Project</title>
     <link rel="stylesheet" type="text/css" href="./project.css">
-
 </head>
 
 <body>
- 
+  
     <section class="nav-header">
-   <a class="skip-link" href="#main">
+        <a class="skip-link" href="#main">
       Skip to content
-   </a>
+         </a>
         <nav class="navbar">
                 <a href="../"><img alt="home icon" src="../Assets/noun-home-1570646.png" style="width:1em"><br/>Home</a> 
                 
@@ -40,35 +40,32 @@
                             <image width="1em" href="../Assets/screwdriver.svg" height="1em"></image>
                         </svg><br />Settings
                 </a>
-
+        
         </nav>
+ 
     </section>
 
     <section class="main-header">
-        <h1>Going Home</h1>
+        <h1>One-Button Pong</h1>
 
     </section>
 
     <section class="left-container">
-        <video controls src="../Assets/pidgeon-trailer.mp4" aria-label="Gameplay of You Herd It Here!">
-        </video>
-        <img  alt="main gameplay screenshot" src="../Assets/pidgeon2.png">
-        <img style="grid-area:f" alt="Narrative screenshot"  src="../Assets/pidgeon1.png">
-
+        <embed
+        src="../Pong/index.html" class="interactable"/>
     </section>
     <section class="right-container">
         <h2>Summary</h2>
-        <p>One-button flappy bird like game made with the Godot 4 engine! Games that use just one button can be more
-         accessible for people with mobility disabilities. I find them easier to play when my hands hurt. Play as Carrie, the carrier pigeon, tasked with transporting messages back and forth between occupied territories and the Allied forces. CW: War, human death <a href="https://orionstudio.itch.io/going-home">Play it here!</a> Much of the research for this piece came from "Secret Pigeon Service" by Gordon Corera.  Many of the pixel art and sounds were found open source or bought, but the pigeon is by me.  The main music is also by OrionStudio </p>
+        <p>One-button pong alternative made using C++ and Raylib! Games that use just one button can be more
+         accessible for people with mobility disabilities. I find them easier to play when my hands hurt.</p>
 
         <h2>What I Learned and What's Next</h2>
         <p>
-            This was an especially interesting project because I got to experiment with mixing narrative with puzzle design. I used the Dialogic framework in Godot so I could control the main UI, the dialogue, and the puzzle using just one button. 
+            I wanted to practice my C++ skills, so this is purely written in C++ using the Raylib library. The hardest part of making the game wasn't the code itself, but compiling it for the web using my Linux machine. For anyone in the future looking to do this -- it's important to build emscripten, a library made for packaging raylib programs for the web, from source, and not using apt! You can learn more about compiling Raylib applications for the web <a href="https://github-wiki-see.page/m/raysan5/raylib/wiki/Working-for-Web-(HTML5)">in this article about Web Assembly through Raylib.</a>
         </p>
         <p>
-            Since making this game, I've learned that it is best practice to not require users to hold down a button to select an option. In this game, you can see that problematic pattern in the UI. For some users, holding down a button for a period of time can cause discomfort. I'd like to come back to this game and implement a framework where when the user selects an option with a button press, a count-down timer appears. If the user hasn't pressed the button again by the time the timer runs out, that option is selected. 
+            I want to come back to this project and make the UI better - right now the game just starts on load, but I think it'd be work better if it only started once a user pressed the space bar once. For now, I'm quite proud of this project -- I made it in one day!
         </p>
-
         <p>
             I would also like to implement an accessible slider where players can change the speed of the game. 
         </p>
