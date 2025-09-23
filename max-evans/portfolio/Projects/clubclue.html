@@ -5,24 +5,24 @@
     <script src="../settings.js"></script>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../main.css">
-    <link rel="stylesheet" type="text/css" href="./project.css">
-
     <title>Project</title>
+    <link rel="stylesheet" type="text/css" href="./project.css">
 
 </head>
 
 <body>
+ 
     <section class="nav-header">
-          <a class="skip-link" href="#main">
+   <a class="skip-link" href="#main">
       Skip to content
-     </a>
+   </a>
         <nav class="navbar">
                 <a href="../">
                     <svg xmlns="http://www.w3.org/2000/svg" style="width:1em;height:1em;">
                             <image width="1em" height="1em" href="../Assets/noun-home.svg"></image>
                         </svg><br/>Home 
                 </a>
-                                
+                
                 <a href="../about.html"> 
                     <svg xmlns="http://www.w3.org/2000/svg" style="width:1em;height:1em;">
                             <image width="1em" height="1em" href="../Assets/noun-pencil.svg"></image>
@@ -47,23 +47,37 @@
 
         </nav>
     </section>
+
     <section class="main-header">
-        <h1>You Herd It Here!</h1>
+        <h1>Club Clue</h1>
 
     </section>
 
-    <section class="left-container" >
-        <video controls src="../Assets/youherdithere-trailer.mp4"  aria-label="Gameplay of You Herd It Here!">
-        </video>
-        <img alt="Tutorial Page" src="../Assets/sheep-3.png">
-        <img style="grid-area:f" alt="Sheepdog Speed Selection" src="../Assets/sheep-2.png">
+    <section class="left-container">
+        <img style="grid-area:d" alt="Dialogue with Juniper" src="../Assets/cc1.gif">
+        <img style="grid-area:e" alt="Caesar Cipher"  src="../Assets/cc2w.gif">
 
     </section>
     <section class="right-container">
         <h2>Summary</h2>
-        <p>One-button sheep herding puzzle game made with the Godot 4 engine! Games that use just one button can be more
-         accessible for people with mobility disabilities. I find them easier to play when my hands hurt. <a href="https://orionstudio.itch.io/you-herd-it-here">Play it here!</a> Music by
-          Rebecca Evans </p>
+        <p>
+            Have you ever wondered what if Nancy Drew games were gayer and trans-er and indie-er?  This is that game! With unique characters, we hope to craft compelling narratives and gameplay based on issues that are important to us. 
+        </p>
+        <p>This point-and-click mystery demo was made for the Trans Representation Jam 2025. It's an attempt to show what we were able to make in around two months while juggling full time work and other responsibilities.  This was made using Godot, EgoVenture, and Dialogic. 
+        </p>
+
+        <h2>What I Learned and What's Next</h2>
+        <p>
+            This project required me to learn more about how to add external libraries to my games. The EgoVenture framework is a point-and-click engine built into Godot. While I loved a lot of its features, I didn't like it's dialogue framework, Parrot.  So, I integrated EgoVenture's point-and-click interaction features with Dialogic's event and dialogue features to make this game come together. 
+        </p>
+        <p>
+            There are two things we would like to add to the demo. The first is accessibility features. Taking my lessons from previous projects, I would like to convert the point and click model into an optional one-button mode, allowing more players to interact with the game without the use of a mouse. I would also like to add text-to-speech options so that low-vision and blind players can play as well.
+        </p>
+
+        <p>
+            I also would like to add one more of game locations into the demo.  I believe having the player navigate to two different in-game locations and look for clues at each will provide a good summary of what the eventual gameplay will be like. 
+        </p>
+
 
         <h2>Responsibilities</h2>
         <ul>
@@ -72,9 +86,10 @@
         </ul>
         <h2>Skills Featured</h2>
         <ul>
-            <li>Accessible Design</li>
             <li>GDScript</li>
-        </ul>   
+            <li>Dialogue Systems</li>
+            <li>Tool Integration</li>
+        </ul>
      </section>
 </body>
 

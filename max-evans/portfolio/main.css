@@ -279,9 +279,14 @@ a:visited {
     background-color: #333;
 }
 
-img,svg
+img
 {
-    filter: invert(1)
+    filter: invert(0)
+}
+
+svg
+{
+    filter: invert()
 }
 
 *:focus {
