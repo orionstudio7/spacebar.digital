@@ -37,29 +37,11 @@ h2{
 
 /* } */
 
-label{
-    width:100%;
-    padding:.5em;
-    margin:.5em;
-    text-align:center;
-    font-weight: bold;
-    font-size: 20px;
 
-}
-
- input{
-        width: 80%; 
-        padding: 10px;
-        /* width: 100%; */
-        margin: 10px;
-        box-sizing: border-box;
-        font-size: 20pt;
-        border-width: thick;
-        border-color: black;
-        border-style: solid;
-        border-radius: 15px;
-
-    }
+/* 
+input[type="radio"]+label{
+    display:block;
+} */
 
 textarea{
         width: 80%; /* Full width */
@@ -226,6 +208,7 @@ p, nav, section {
 padding: 0 1em;
 }
 
+
 p {
 line-height: 1.5em;
 }
@@ -254,8 +237,8 @@ html {
     background-color: black;
 }
 
-h1, h2, p, ul, label{
-    color: white
+h1, h2, p, ul, label, .fontSection{
+    color: white;
 }
 
 a {
@@ -279,6 +262,19 @@ a:visited {
     background-color: #333;
 }
 
+ input{
+        /* width: 80%;  */
+        padding: 10px;
+        /* width: 100%; */
+        margin: 10px;
+        box-sizing: border-box;
+        font-size: 20pt;
+        border-width: thick;
+        border-color: white;
+        border-style: solid;
+        border-radius: 15px;
+
+    }
 img
 {
     filter: invert(0)
