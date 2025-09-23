@@ -30,7 +30,7 @@ margin:10px;
 /* this is how you assign an element to one of the labeled40px areas in the template strings. */
 grid-area: b;
 justify-self: end;
-align-self: start;
+/* align-self: center; */
 display:grid;
 grid-template:
     "d d" 
@@ -43,7 +43,7 @@ margin:10px;
 .right-container {
 grid-area: c;
 /* padding-right: 10px; */
-width:40vw;
+width:30vw;
 padding:10px;
 }
 
@@ -70,13 +70,11 @@ min-width :1em;
 width: 1em;
 padding: 0;
 }
-video, .interactable {
+video {
     grid-area: d;
     min-width: 100px;
-    padding-top: 5px;
+    /* padding-top: 5px; */
     max-width:100%;
-    justify-self:end;
-
 }
 h2{
 margin:0px;
@@ -99,10 +97,23 @@ margin:0px;
         */
         gap: .5em;
         /* Gap is the "gutters" between the cells. An alternative to this is two values for between rows and between columns.*/
-        box-sizing:content-box;
+        box-sizing:border-box;
         /* background-color:purple */
     }
 
+    .left-container {
+        /* flex:50%; */
+        /* this is how you assign an element to one of the labeled40px areas in the template strings. */
+        grid-area: b;
+        justify-self:center;
+        /* justify-self: end; */
+        /* align-self: center; */
+        display:flex;
+        margin:0px;
+        width:80%;
+        height:80vw;
+
+    }
 
     .right-container {
         grid-area: c;
