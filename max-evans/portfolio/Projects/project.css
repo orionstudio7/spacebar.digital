@@ -6,6 +6,7 @@ grid-template:
     "n n "
     "a a "
     "b c ";
+
 place-content: start center;
 /*
 The fr unit is a "fractional unit" and is a content aware unit.
@@ -15,7 +16,8 @@ reified units like % or px.
 */
 gap: .5em;
 /* Gap is the "gutters" between the cells. An alternative to this is two values for between rows and between columns.*/
-box-sizing: border-box;
+box-sizing:content-box;
+
 }
 
 section {
@@ -101,17 +103,35 @@ margin:0px;
         /* background-color:purple */
     }
 
+    .nav-header{
+    
+        display: grid;
+        grid-template:
+        "skip"
+        "bar";
+        place-content: center;
+    }
+
+    nav {
+        grid-area: "bar";
+    }
+    .skip-link{
+        grid-area: "skip";
+        text-align: center;
+    }
     .left-container {
         /* flex:50%; */
         /* this is how you assign an element to one of the labeled40px areas in the template strings. */
         grid-area: b;
-        justify-self:center;
-        /* justify-self: end; */
+
+        justify-self: center;
         /* align-self: center; */
         display:flex;
+        flex-direction: column;
         margin:0px;
         width:80%;
-        height:80vw;
+        /* height:80vw; */
+
 
     }
 
@@ -123,6 +143,8 @@ margin:0px;
         align-self: center;
 
     }
+
+
 
 }
 

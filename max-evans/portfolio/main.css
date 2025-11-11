@@ -143,6 +143,23 @@ embed{
         height: 100%;
     }
 
+    .nav-header{
+    
+        display: grid;
+        grid-template:
+        "skip"
+        "bar";
+        place-content: center;
+    }
+
+    nav {
+        grid-area: "bar";
+    }
+    .skip-link{
+        grid-area: "skip";
+        text-align: center;
+    }
+
 }
 
 
