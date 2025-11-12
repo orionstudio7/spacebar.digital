@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="./settings.js" defer></script>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width">
+
+    <title>Club Clue</title>
+
+    <style>
+     @media (max-width: 600px){
+          .card {
+          max-width: 1200px;
+          /* margin: 0 auto; */
+          display: grid;
+          /* gap: 1rem; */
+        }
+
+        body {
+        font-size: 20px !important;
+        }
+
+    }
+      
+     .logo{
+        /* width: 6vw; */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 40px;
+     }
+    
+    /* Inside this block, comments look like this. */
+      #card-catalog {  /* We used an id here, but if you plan to have multiple catalogs on the same page, you could turn this into a class. */
+        display: flex;
+        flex-direction: row;  /* This is the default. Other options: column, and row-reverse and column-reverse. */
+        flex-wrap: wrap; /* The default is nowrap additionally the value wrap-reverse */
+        max-width: 100vw;
+        /*
+          vw and its sibling vh units are proportional units to the viewport.
+          This is like 100% width but specific to the viewport size and not the calculated size of the parent.
+          */  
+      }
+
+      .card {
+        border: black solid 3px;
+        border-radius: 15px;
+        flex: 1 150px;
+        /*
+          The value without a unit is how much of the proportional area an item should take.
+          Note lower in the CSS for the highlight CSS rule we give a much larger value, and thus more of the available space.
+         */
+        display: grid;  /* This is CSS grid. Using it for the visual appearance of the cards. */
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        margin: 0.5em;
+      }
+
+      .card > h3 {
+        grid-row: 2;
+        margin: 1em;
+        text-decoration-line: underline;
+      }
+
+
+
+      label{
+        margin-left: 1em;
+      }
+
+       #color
+      {
+        /* margin: 1em; */
+        font-weight:bold;
+
+      }
+
+
+      /* The rest of the styles are just for adjusting the look of the other elements. Feel free to read, but not explained. */
+      body {
+        font-size: 14pt;
+      }
+
+      p, nav, section {
+        padding: 0 1em;
+      }
+
+      p {
+        line-height: 1.5em;
+        /* text-align: justify; */
+      }
+
+
+
+      #color{
+        margin-top: 1em;
+      }
+      input{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        /* width: 100%; */
+      }
+      
+
+
+      .tagline{
+        text-align: center;
+      }
+      h1 {
+         text-align:center; 
+      }
+
+      h2{
+         text-align:center; 
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+
+     @media (prefers-color-scheme: dark)  {
+    
+        body {
+          color: white;
+          background-color: black;
+        }
+
+        a {
+          color: white;
+        }
+
+        .card {
+          border-color: #949393;
+        }
+
+        .highlight {
+            background-color: #d69ac4;
+            color: black;
+        }
+
+        *:focus { 
+            outline: 5px #000000 solid;
+            outline-offset: 0;
+            box-shadow: 0 0 0 10px #fff;  
+        }
+
+
+      }
+
+  @media (prefers-color-scheme: light)  {
+      /*
+        This demo is not about this, but this is how to modify your design for light mode or in this case, dark mode.
+       */
+        body {
+          color: black;
+          background-color: white;
+        }
+
+        a {
+          color: black;
+        }
+/* 
+        a:visited {
+          color: mediumpurple;
+        } */
+
+        .card {
+          border-color: #333;
+        }
+
+        .highlight {
+            background-color: #d69ac4;
+            color: black;
+        }
+
+
+        *:focus { 
+        outline: 5px #ffffff solid;
+        outline-offset: 0;
+        box-shadow: 0 0 0 10px #000000;  
+        }
+    }
+
+
+    
+
+      
+
+
+    </style>
+  </head>
+  <body class="darkTheme">
+    <h1>Hem & Haw</h1>
+    
+
+    <p class="tagline"> Unique handcrafted accessories made from secondhand and recycled materials </p>
+
+    <img class="logo" src="./hem_haw_logo.png" alt="Text in Image reads'Hem & Haw' where the ampersand is a needle and thread">
+
+    <section id="card-catalog">
+      <!--
+        A section is a semantic block level element.
+        It functions like a div but makes it clear that the contained HTML is a standalone element.
+        See: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section
+      -->
+
+
+      <a href="./" class="card highlight">
+        <h3>E-Commerce Store Coming Soon!</h3>
+      </a>
+      <!-- <a href="https://bsky.app/profile/clubclue.bsky.social" class="card">
+        <h3>Bluesky</h3>
+      </a>
+    -->
+      
+    </section>
+
+
+    
+  
+</body></html>
