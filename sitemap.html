@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="./angular10.js"></script>
+    <script src="./todo.js"></script>
+    <script src="./settings.js"></script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <title>Max Evans</title>
+ 
+        <style> 
+     @media (max-width: 1200px){
+          .card {
+          max-width: 1200px;
+          /* margin: 0 auto; */
+          display: grid;
+          gap: 1rem;
+        }
+
+        body {
+        color: black;
+        }
+
+
+      }
+      
+    /* Inside this block, comments look like this. */
+      #card-catalog {  /* We used an id here, but if you plan to have multiple catalogs on the same page, you could turn this into a class. */
+        display: flex;
+        flex-direction: row;  /* This is the default. Other options: column, and row-reverse and column-reverse. */
+        flex-wrap: wrap; /* The default is nowrap additionally the value wrap-reverse */
+        max-width: 100vw;
+        /*
+          vw and its sibling vh units are proportional units to the viewport.
+          This is like 100% width but specific to the viewport size and not the calculated size of the parent.
+          */
+      }
+
+      .card {
+        border: black solid 3px;
+        border-radius: 2vw;
+        flex: 1 150px;
+        /*
+          The value without a unit is how much of the proportional area an item should take.
+          Note lower in the CSS for the highlight CSS rule we give a much larger value, and thus more of the available space.
+         */
+        display: grid;  /* This is CSS grid. Using it for the visual appearance of the cards. */
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        margin: 0.5em;
+      }
+
+      .card > h3 {
+        grid-row: 2;
+        margin: 1em;
+      }
+
+      .highlight {
+        flex: 5 300px;
+        background-color: lightyellow;
+      }
+
+      /* The rest of the styles are just for adjusting the look of the other elements. Feel free to read, but not explained. */
+      body {
+        font-size: 14pt;
+      }
+
+      p, nav, section {
+        padding: 0 1em;
+      }
+
+      p {
+        line-height: 1.5em;
+      }
+      
+    
+  </style>
+
+  </head>
+  <body>
+      <nav class="navbar">
+        <!-- <ul class="nav-list"> -->
+         <a href="./">
+            <svg xmlns="http://www.w3.org/2000/svg" style="width:1em;height:1em;">
+                <image width="1em" height="1em" href="./Assets/noun-home.svg"></image>
+            </svg><br/>Home 
+          </a>
+          <a href="./about.html"><svg xmlns="http://www.w3.org/2000/svg"  style="width:1em;height:1em;"><image width="1em" height="1em"  href="./Assets/noun-pencil.svg"></image></svg><br/>About</a> 
+          <a href="./web.html"><svg xmlns="http://www.w3.org/2000/svg"  style="width:1em;height:1em;"><image width="1em" height="1em"  href="./Assets/noun_mouse.svg"></image></svg><br/>Web</a>
+          <a href="./games.html"><svg xmlns="http://www.w3.org/2000/svg"  style="width:1em;height:1em;"><image width="1em" height="1em"  href="./Assets/controller.svg"></image></svg><br/>Games</a>
+          <a href="./settings.html"><svg xmlns="http://www.w3.org/2000/svg"  style="width:1em;height:1em;"><image width="1em" height="1em" href="./Assets/screwdriver.svg"></image></svg><br/>Settings</a>
+
+        <!-- </ul> -->
+      </nav>
+    <h1>Site Map</h1>
+
+    <h2><a href = "../">Home</a></h2>
+    <h2><a href = "./about.html">About</a></h2>
+    <h2><a href = "./web.html">Web</a></h2>
+        <ul>
+        <li><a href = "https://orionstudio7.github.io/drum-kit/">Accessible Drumkit</a></li>
+        <li><a href = "https://github.com/orionstudio7/mapquestapplication">Screen Reader Mapquest App</a></li>
+        <li><a href="https://spacebar.digital/max-evans/portfolio/tasklist.html">Task List </a></li>
+        <li><a href="https://spacebar.digital/max-evans/portfolio/boycott.html">Boycott</a></li>
+
+        </ul>
+    <h2><a href = "./games.html">Games</a></h2>
+   <ul>
+        <li><a href = "https://spacebar.digital/max-evans/portfolio/Projects/onebuttonpong.html">One Button Pong </a></li>
+        <li><a href = "https://spacebar.digital/max-evans/portfolio/Projects/clubclue.html">Club Clue</a></li>
+        <li><a href="https://spacebar.digital/max-evans/portfolio/Projects/youherdithere.html">You Herd It here </a></li>
+        <li><a href="https://orionstudio.itch.io/soundoku">Soundoku</a></li>
+
+        <li><a href="https://orionstudio.itch.io/running-through">Running Through A Crypto Mine</a></li>
+
+        <li><a href="https://spacebar.digital/max-evans/portfolio/Projects/goinghome.html">Going Home</a></li>
+
+        </ul>
+    
+    <h2><a href = "./settings.html">settings</a></h2>
+
+
+
+  
+    <footer>
+      <p>Open Source. MIT License.</p>
+      <p><a href="./sources.html">Sources</a></p>
+
+       <p><a href="./sitemap.html">Sitemap</a></p>
+
+    </footer> 
+
+  </body>
+</html>
