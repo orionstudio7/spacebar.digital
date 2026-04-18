@@ -43,26 +43,6 @@ input[type="radio"]+label{
     display:block;
 } */
 
-textarea{
-        width: 80%; /* Full width */
-        padding: 10px;
-        margin: 10px;
-        box-sizing: border-box;
-        font-size: 20PX;
-        border-width: thick;
-        border-color: black;
-        border-style: solid;
-        border-radius:15px;
-        height:100%;
-        margin-top: 5px;
-        margin-bottom: 10px;
-
-    }
-
-.submit{
-    margin-bottom:em;
-    /* height: 100%;  */
-}
 
 
 embed{
@@ -88,7 +68,7 @@ p{
 nav {
     /* list-style: none; */
     /* background-color: #B67A8D; */
-    font-size: 20px;
+    font-size: 30px;
     display: flex;
     flex-direction: row;
     justify-content: right;
@@ -229,11 +209,13 @@ p {
 line-height: 1.5em;
 }
 
-form.contactSection
+
+
+form#contactForm
 {
 
-    padding: 0;
-    margin:0;
+    padding: 10px;
+    margin-top:5%;
     width: 100%;
 
     border: white solid 3px;
@@ -242,6 +224,26 @@ form.contactSection
     display:grid;
     justify-items:center;
 }
+
+form#contactForm input{
+    width: 100%;
+    margin: 1%;
+}
+
+form#contactForm textarea{
+    width: 100%;
+    margin: 1%;
+    margin-bottom: 2%;
+
+    box-sizing: border-box;
+    font-size: 20px;
+    border-width: thick;
+    border-color: black;
+    border-style: solid;
+    border-radius:15px;
+    height:80%;
+}
+
 
 
 @media (prefers-color-scheme: dark) {
