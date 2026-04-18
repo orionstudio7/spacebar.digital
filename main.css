@@ -44,6 +44,7 @@ h2{
 
 }
 
+
 /* label, input, textarea{ */
 
     /* padding-left: .5em;
@@ -214,8 +215,9 @@ margin: 0.5em;
 }
 
 .card > h3 {
-grid-row: 2;
-margin: 1em;
+    grid-row: 2;
+    margin: 1em;
+    border-radius:10px;
 }
 
 .highlight {
@@ -292,9 +294,13 @@ html {
     background-image:url(/Assets/spacebar-invert.svg)
 }
 
-h1, h2, p, ul, label, .fontSection{
+h1, h2, ul, label, .fontSection{
     color: white;
     background-color:black;
+}
+
+p{
+    color:white;
 }
 
 a {
