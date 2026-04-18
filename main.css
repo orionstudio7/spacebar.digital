@@ -1,3 +1,20 @@
+@font-face {
+  font-family: arial-7; /* set name */
+  src: url(/Assets/arial-narrow-7-font/ArialNarrow7-9YJ9n.ttf); /* url of the font */
+}
+
+@font-face {
+  font-family: comic-sans; /* set name */
+  src: url(/Assets/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf); /* url of the font */
+}
+
+
+html{
+    background-image: url(/Assets/spacebar.svg);
+    background-color: #FAF9F6;
+    font-family:arial-7;
+}
+
 h1{
     font-size: 100px;
     text-align:center;
@@ -9,6 +26,7 @@ h1{
     padding-bottom: 50px;
     border-width: 10px;
     margin: 0;
+    background-color: white;
 }
 
 h2{
@@ -22,6 +40,8 @@ h2{
     padding-bottom: 20px;
     border-width: 10px;
     margin: 10;
+    background-color: white;
+
 }
 
 /* label, input, textarea{ */
@@ -53,10 +73,12 @@ section{
     margin: 10vw;
     margin-top: 20px;
     margin-bottom: 20px;
+    background-color: white;
+    border-radius: 15px;
 }
 
 .summary{
-    display: flex;
+    padding: 10px;
 }
 
 ul{
@@ -74,7 +96,7 @@ nav {
     justify-content: right;
 }
 
-nav a{
+nav a, a.skip-link{
     text-align: center;
     border-style: solid;
     border-radius: 10px;
@@ -82,6 +104,7 @@ nav a{
     border-width: 5px;
     margin: 5px;
     color: black;
+    background-color: white;
 }
 
 
@@ -134,6 +157,11 @@ embed{
 
     nav {
         grid-area: "bar";
+        font-size: 20px;
+    }
+
+    nav a{
+        margin: 2px;
     }
     .skip-link{
         grid-area: "skip";
@@ -216,10 +244,8 @@ form#contactForm
 
     padding: 10px;
     margin-top:5%;
-    width: 100%;
 
     border: white solid 3px;
-    width: 100%;
     border-radius: 15px;
     display:grid;
     justify-items:center;
@@ -245,6 +271,16 @@ form#contactForm textarea{
 }
 
 
+footer{
+    border-color: white;
+    border-style: solid;
+    border-radius:15px;
+    background-color:white;
+    width: 100%;
+    margin: 10px;
+}
+
+
 
 @media (prefers-color-scheme: dark) {
 /*
@@ -252,11 +288,13 @@ This demo is not about this, but this is how to modify your design for light mod
 */
 html {
     color: white;
-    background-color: black;
+    background-color: #343231 ;
+    background-image:url(/Assets/spacebar-invert.svg)
 }
 
 h1, h2, p, ul, label, .fontSection{
     color: white;
+    background-color:black;
 }
 
 a {
@@ -264,12 +302,18 @@ a {
 
 }
 
-nav a {
+nav a, a.skip-link{
     color: white;
+    background-color: black;
+}
+
+
+section{
+    background-color: black;
 }
 
 a:visited {
-    color: mediumpurple;
+    color: rgb(192, 166, 243);
 }
 
 .card {
@@ -280,7 +324,7 @@ a:visited {
     background-color: #333;
 }
 
- input{
+input{
         /* width: 80%;  */
         padding: 10px;
         /* width: 100%; */
@@ -292,7 +336,8 @@ a:visited {
         border-style: solid;
         border-radius: 15px;
 
-    }
+}
+
 img
 {
     filter: invert(0)
@@ -308,4 +353,11 @@ svg
 	outline-offset: 4;
 	box-shadow: 0 0 0 8px #ffffff;
 } 
+
+footer{
+    border-color: black;
+    border-style: solid;
+    border-radius:15px;
+    background-color:black;
+}
 }

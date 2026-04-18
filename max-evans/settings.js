@@ -46,6 +46,8 @@ function loadTheme()
 
 
 
+
+
 //Every time the DOM is loaded, load the font as well 
 document.addEventListener("DOMContentLoaded",function(){
   loadTheme();

@@ -1,7 +1,6 @@
 function setFont(fontname) {
 
     localStorage.setItem("font",fontname);
-    
     const elements = document.getElementsByTagName("*");
   //  this will get all of the elements in the site
     //sets it to the font we listed in the font-name
@@ -40,5 +39,5 @@ function loadFont()
 
 //Every time the DOM is loaded, load the font as well 
 document.addEventListener("DOMContentLoaded",function(){
-  loadFont();
+    loadFont();
 });
