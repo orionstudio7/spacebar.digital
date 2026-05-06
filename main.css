@@ -1,23 +1,27 @@
 @font-face {
-  font-family: arial-7; /* set name */
-  src: url(/Assets/arial-narrow-7-font/ArialNarrow7-9YJ9n.ttf); /* url of the font */
+    font-family: arial-7;
+    /* set name */
+    src: url(/Assets/arial-narrow-7-font/ArialNarrow7-9YJ9n.ttf);
+    /* url of the font */
 }
 
 @font-face {
-  font-family: comic-sans; /* set name */
-  src: url(/Assets/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf); /* url of the font */
+    font-family: comic-sans;
+    /* set name */
+    src: url(/Assets/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf);
+    /* url of the font */
 }
 
 
-html{
+html {
     background-image: url(/Assets/spacebar.svg);
     background-color: #FAF9F6;
-    font-family:arial-7;
+    font-family: arial-7;
 }
 
-h1{
+h1 {
     font-size: 100px;
-    text-align:center;
+    text-align: center;
     border-color: black 4px;
     border-style: solid;
     border-radius: 3vw;
@@ -29,9 +33,9 @@ h1{
     background-color: white;
 }
 
-h2{
+h2 {
     font-size: 40px;
-    text-align:center;
+    text-align: center;
     border-color: black;
     border-style: solid;
     border-radius: 2vw;
@@ -47,11 +51,11 @@ h2{
 
 /* label, input, textarea{ */
 
-    /* padding-left: .5em;
+/* padding-left: .5em;
     padding-right: .5em; 
     margin-left: 1em;
     margin-right: 1em; */
-    /* border-radius: 15px;
+/* border-radius: 15px;
     font-size:20px;
     box-sizing:content-box;
     width: 80%; */
@@ -66,11 +70,11 @@ input[type="radio"]+label{
 
 
 
-embed{
+embed {
     margin-right: 20px;
 }
 
-section{
+section {
     margin: 10vw;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -78,16 +82,18 @@ section{
     border-radius: 15px;
 }
 
-.summary{
+.summary {
     padding: 10px;
 }
 
-ul{
-    font-size:20px;
+ul {
+    font-size: 20px;
 }
-p{
-    font-size:20px;
+
+p {
+    font-size: 20px;
 }
+
 nav {
     /* list-style: none; */
     /* background-color: #B67A8D; */
@@ -97,7 +103,8 @@ nav {
     justify-content: right;
 }
 
-nav a, a.skip-link{
+nav a,
+a.skip-link {
     text-align: center;
     border-style: solid;
     border-radius: 10px;
@@ -113,17 +120,17 @@ nav .devName {
     /* font-weight: bold; */
     text-align: center;
     align-content: center;
-    }
+}
 
 
 /* two lined focus indicator provides accessibility no matter what browser settings users have z*/
 *:focus {
-	outline: 4px #ffffff solid;
-	outline-offset: 4;
-	box-shadow: 0 0 0 8px #000000;
-} 
+    outline: 4px #ffffff solid;
+    outline-offset: 4;
+    box-shadow: 0 0 0 8px #000000;
+}
 
-embed{
+embed {
     width: 1000px;
     height: 100%;
 }
@@ -131,28 +138,29 @@ embed{
 
 @media (max-width: 800px) {
 
-    h1
-    {
+    h1 {
         font-size: 50px;
     }
-    h2{
-        font-size:30px;
+
+    h2 {
+        font-size: 30px;
     }
-    section{
+
+    section {
         margin: 20px;
     }
 
-    embed{
+    embed {
         width: 100%;
         height: 100%;
     }
 
-    .nav-header{
-    
+    .nav-header {
+
         display: grid;
         grid-template:
-        "skip"
-        "bar";
+            "skip"
+            "bar";
         place-content: center;
     }
 
@@ -161,10 +169,11 @@ embed{
         font-size: 20px;
     }
 
-    nav a{
+    nav a {
         margin: 2px;
     }
-    .skip-link{
+
+    .skip-link {
         grid-area: "skip";
         text-align: center;
     }
@@ -172,7 +181,7 @@ embed{
 }
 
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
     .card {
         max-width: 1200px;
         /* margin: 0 auto; */
@@ -181,84 +190,89 @@ embed{
     }
 
     body {
-    font-size: 500px;
-    color: black;
+        font-size: 500px;
+        color: black;
     }
 
 
 }
 
 /* Inside this block, comments look like this. */
-#card-catalog {  /* We used an id here, but if you plan to have multiple catalogs on the same page, you could turn this into a class. */
-display: flex;
-flex-direction: row;  /* This is the default. Other options: column, and row-reverse and column-reverse. */
-flex-wrap: wrap; /* The default is nowrap additionally the value wrap-reverse */
-max-width: 100vw;
-/*
+#card-catalog {
+    /* We used an id here, but if you plan to have multiple catalogs on the same page, you could turn this into a class. */
+    display: flex;
+    flex-direction: row;
+    /* This is the default. Other options: column, and row-reverse and column-reverse. */
+    flex-wrap: wrap;
+    /* The default is nowrap additionally the value wrap-reverse */
+    max-width: 100vw;
+    /*
     vw and its sibling vh units are proportional units to the viewport.
     This is like 100% width but specific to the viewport size and not the calculated size of the parent.
     */
 }
 
 .card {
-border: black solid 3px;
-border-radius: 2vw;
-flex: 1 150px;
-/*
+    border: black solid 3px;
+    border-radius: 2vw;
+    flex: 1 150px;
+    /*
     The value without a unit is how much of the proportional area an item should take.
     Note lower in the CSS for the highlight CSS rule we give a much larger value, and thus more of the available space.
     */
-display: grid;  /* This is CSS grid. Using it for the visual appearance of the cards. */
-grid-template-rows: 1fr 1fr;
-grid-template-columns: 1fr;
-margin: 0.5em;
+    display: grid;
+    /* This is CSS grid. Using it for the visual appearance of the cards. */
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    margin: 0.5em;
 }
 
-.card > h3 {
+.card>h3 {
     grid-row: 2;
     margin: 1em;
-    border-radius:10px;
+    border-radius: 10px;
 }
 
 .highlight {
-flex: 5 300px;
-background-color: lightyellow;
+    flex: 5 300px;
+    background-color: lightyellow;
 }
 
 /* The rest of the styles are just for adjusting the look of the other elements. Feel free to read, but not explained. */
 body {
-font-size: 14pt;
+    font-size: 14pt;
 }
 
-p, nav, section {
-padding: 0 1em;
+p,
+nav,
+section {
+    padding: 0 1em;
 }
 
 
 p {
-line-height: 1.5em;
+    line-height: 1.5em;
 }
 
 
 
-form#contactForm
-{
+form#contactForm {
 
     padding: 10px;
-    margin-top:5%;
+    margin-top: 5%;
 
     border: white solid 3px;
     border-radius: 15px;
-    display:grid;
-    justify-items:center;
+    display: grid;
+    justify-items: center;
 }
 
-form#contactForm input{
+form#contactForm input {
     width: 100%;
     margin: 1%;
 }
 
-form#contactForm textarea{
+form#contactForm textarea {
     width: 100%;
     margin: 1%;
     margin-bottom: 2%;
@@ -268,69 +282,73 @@ form#contactForm textarea{
     border-width: thick;
     border-color: black;
     border-style: solid;
-    border-radius:15px;
-    height:80%;
+    border-radius: 15px;
+    height: 80%;
 }
 
 
-footer{
+footer {
     border-color: white;
     border-style: solid;
-    border-radius:15px;
-    background-color:white;
-    width: 100%;
+    border-radius: 15px;
+    background-color: white;
     margin: 10px;
 }
 
 
 
 @media (prefers-color-scheme: dark) {
-/*
+
+    /*
 This demo is not about this, but this is how to modify your design for light mode or in this case, dark mode.
 */
-html {
-    color: white;
-    background-color: #343231 ;
-    background-image:url(/Assets/spacebar-invert.svg)
-}
+    html {
+        color: white;
+        background-color: #343231;
+        background-image: url(/Assets/spacebar-invert.svg)
+    }
 
-h1, h2, ul, label, .fontSection{
-    color: white;
-    background-color:black;
-}
+    h1,
+    h2,
+    ul,
+    label,
+    .fontSection {
+        color: white;
+        background-color: black;
+    }
 
-p{
-    color:white;
-}
+    p {
+        color: white;
+    }
 
-a {
-    color: lightskyblue
+    a {
+        color: lightskyblue
+    }
 
-}
+    nav a,
+    a.skip-link {
+        color: white;
+        background-color: black;
+    }
 
-nav a, a.skip-link{
-    color: white;
-    background-color: black;
-}
 
+    section {
+        background-color: black;
+    }
 
-section{
-    background-color: black;
-}
+    a:visited {
+        color: rgb(192, 166, 243);
+    }
 
-a:visited {
-    color: rgb(192, 166, 243);
-}
+    .card {
+        border-color: #ffffff;
+    }
 
-.card {
-    border-color: #ffffff;
-}
+    .highlight {
+        background-color: #333;
+    }
 
-.highlight {
-    background-color: #333;
-}
-
-input{
+    input {
         /* width: 80%;  */
         padding: 10px;
         /* width: 100%; */
@@ -342,28 +360,26 @@ input{
         border-style: solid;
         border-radius: 15px;
 
-}
+    }
 
-img
-{
-    filter: invert(0)
-}
+    img {
+        filter: invert(0)
+    }
 
-svg
-{
-    filter: invert()
-}
+    svg {
+        filter: invert()
+    }
 
-*:focus {
-	outline: 4px #000000 solid;
-	outline-offset: 4;
-	box-shadow: 0 0 0 8px #ffffff;
-} 
+    *:focus {
+        outline: 4px #000000 solid;
+        outline-offset: 4;
+        box-shadow: 0 0 0 8px #ffffff;
+    }
 
-footer{
-    border-color: black;
-    border-style: solid;
-    border-radius:15px;
-    background-color:black;
-}
+    footer {
+        border-color: black;
+        border-style: solid;
+        border-radius: 15px;
+        background-color: black;
+    }
 }
